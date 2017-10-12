@@ -1,4 +1,5 @@
 # amasan-os
-cross platform os built with web technology
+#**Cross Platform Cloud Based Operating System**#
+#
 
 i am trying to understand the basics of how github works

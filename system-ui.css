@@ -1,0 +1,3 @@
+.menubar {background:linear-gradient(#dadada, #b9b9b9);  }
+.menubar .menuitem {background:linear-gradient(#dadada, #b9b9b9);  color:#575757;}
+.menubar .menuitem:hover {background:linear-gradient(#337DD8, #06329F);  color:#eee;}

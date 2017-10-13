@@ -24,6 +24,8 @@ Amasan-OS is the next generation operating system.
 * Payment System: decentralised block chain based cryptocurrency that has instant transaction verification
 * Identification System: a centralised identification system capable of identifying everyone from diverse nations.
 * Business/System/Social Applications: these applications will be crossplatform & lightweight to enable instantenous installs
+* TV/Radio is on by default (will a combination of tunein/youtube like platform, that will be able to access tons of TV/Radio stations).
+*
 
 
 #

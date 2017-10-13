@@ -22,4 +22,4 @@ Amasan-OS is the next generation operating system.
 * Streaming: Audio & Video streaming instantenous with a 1000:1 compression
 * Devices: communication and control of IOT devices/appliances owned by controller
 * Payment System: decentralised block chain based cryptocurrency that has instant transaction verification
-* 
+* Identification System: a centralised identification system capable of identifying everyone from diverse nations.

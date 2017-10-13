@@ -23,3 +23,16 @@ Amasan-OS is the next generation operating system.
 * Devices: communication and control of IOT devices/appliances owned by controller
 * Payment System: decentralised block chain based cryptocurrency that has instant transaction verification
 * Identification System: a centralised identification system capable of identifying everyone from diverse nations.
+* Business/System/Social Applications: these applications will be crossplatform & lightweight to enable instantenous installs
+
+
+#
+## Strategies to get users
+* Availability of familiar business/similar/social applications
+>> ## Business Applications
+>>> Graphics Applications(the Adobe Products)
+>>> Office Applications (the Microsoft Office Products)
+
+>> ## Social Applications
+>>> Wechat(like) application that will be a combination of facebook, twitter, instagram, snapchat etc but not Whatsapp like
+>>> 

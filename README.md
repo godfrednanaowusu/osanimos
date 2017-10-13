@@ -17,3 +17,4 @@ Amasan-OS is the next generation operating system.
 
 #
 ## Functions
+* ###Calls:

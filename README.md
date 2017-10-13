@@ -30,8 +30,8 @@ Amasan-OS is the next generation operating system.
 ## Strategies to get users
 * Availability of familiar business/similar/social applications
 > ## Business Applications
->> * Graphics Applications(the Adobe Products)
->> * Office Applications (the Microsoft Office Products)
+>> * Graphics Applications(the Adobe Products or a replica)
+>> * Office Applications (the Microsoft Office Products or a replica)
 
 > ## Social Applications
 >> * Wechat(like) application that will be a combination of facebook, twitter, instagram, snapchat etc but not Whatsapp like

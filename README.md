@@ -21,3 +21,5 @@ Amasan-OS is the next generation operating system.
 * Messaging: Whatsapp like messaging for both SMS & Email
 * Streaming: Audio & Video streaming instantenous with a 1000:1 compression
 * Devices: communication and control of IOT devices/appliances owned by controller
+* Payment System: decentralised block chain based cryptocurrency that has instant transaction verification
+* 

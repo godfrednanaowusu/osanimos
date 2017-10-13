@@ -17,4 +17,5 @@ Amasan-OS is the next generation operating system.
 
 #
 ## Functions
-* ###Calls:
+* Calls: Voice & Video calls
+* Messaging: Whatsapp like messaging for both SMS & Email

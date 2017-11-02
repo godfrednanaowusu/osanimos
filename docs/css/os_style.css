@@ -23,7 +23,7 @@ p,h1,h2,h3,h4,h5,h6{margin:0; padding:2px;}
 #appcontainerhoder {position: absolute; bottom:0; left:0; right:0;}
 #mainbar .appscontainer{  color:#fff; height:auto; width:90%; background:rgba(0,0,0,0.5); margin:20px auto; padding:10px; border-radius: 2px;    box-shadow: 0 0 10px rgba(29, 29, 29, 0.66)}
 #mainbar .appscontainer .icon { color:#fff; text-decoration: none; width:60px; height:60px; margin:5px; display: inline-block; text-align: center; font-size: 70%;}
-#windowframe{display:none; background:none; width: 100%; height: 100%; position: relative;}
+#windowframe{display:none; background:rgba(0,0,0,0.5); width: 100%; height: 100%; position: relative;}
 #windowframe .bottombar{background: rgb(211, 47, 47); position:absolute; bottom:0; right:0; height:30px; padding:5px; box-shadow: 0 0 2px #000;  }
 #taskbar{position:fixed; top:auto; right:0; bottom:0; left:0; height:40px; background:rgba(0,0,0,0.5); z-index: 9;
         padding:5px; }

@@ -1,5 +1,5 @@
 $(document).ready(function(e){
-    $('#startbutton').on('click', function(e){
+    $('#startbutton').on('touchstart', function(e){
         $('#appcontainerhoder').slideToggle("swing");
     })
 })

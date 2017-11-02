@@ -3,8 +3,7 @@ $(document).ready(function(e){
     $('#startbutton').on('click', function(e){
         $('#appcontainerhoder').slideToggle();
     });
-    $('#appcontainerhoder').focusout(function () {
-        alert();
+    $('#appcontainerhoder').on('focusout', function(e) {
         $('#appcontainerhoder').slideDown();
     });
 });

@@ -1,6 +1,6 @@
 $(document).ready(function(e){
     
-    $('#startbutton').on('touchstart', function(e){
+    $('#startbutton').on('click', function(e){
         $('#appcontainerhoder').slideToggle();
     });
 });

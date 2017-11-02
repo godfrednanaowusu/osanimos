@@ -1,6 +1,6 @@
 $(document).ready(function(e){
     
-    $('img#startbutton').on('touchstart', function(e){        
+    $('#startbutton').on('click', function(e){        
         // $('#appcontainerhoder').show();
         // $('#appcontainerhoder').addClass('animated slideInUp');        
         //     //wait for animation to finish before removing classes

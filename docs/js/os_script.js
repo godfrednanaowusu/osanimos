@@ -4,6 +4,7 @@ $(document).ready(function(e){
         $('#appcontainerhoder').slideToggle();
     });
     $('#appcontainerhoder').focusout(function () {
+        alert();
         $('#appcontainerhoder').slideDown();
     });
 });

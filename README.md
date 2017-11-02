@@ -15,6 +15,7 @@ Amasan-OS is the next generation operating system.
 * Calls, Messages, Browsing etc will all come under one subscription service. (e.g $10.00/month). A contract will then be entered with the telcos.
 * 
 
+**View Site https://godfrednanaowusu.github.io/amasan-os/ **
 #
 ## Functions
 * Calls: Voice & Video calls

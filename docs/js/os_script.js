@@ -1,8 +1,8 @@
 $(document).ready(function(e){
     
-    $('#startbutton').on('touchstart', function(e){
-        $('#appcontainerhoder').slideToggle();
-    });
+    // $('#startbutton').on('touchstart', function(e){
+    //     $('#appcontainerhoder').slideToggle();
+    // });
 
     // $('div.icon').on('click', function(e){
     //     $('#appcontainerhoder').hide();
@@ -10,6 +10,10 @@ $(document).ready(function(e){
     // });
     
 });
+
+function toggleStartMenu(){
+    $('#appcontainerhoder').slideToggle();
+}
 
 function goto_app(path){
         $('#appcontainerhoder').hide();

@@ -4,7 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link rel="stylesheet" href="css/os_style.css">
-    <script src="js/os_script.js"></script>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/os_script.js"></script>
 <style>
     
 </style>
@@ -35,7 +36,7 @@
             </div>
             <iframe src="https://www.bing.com/?toHttps=1&redig=5F3CEBB588EF4F0887C083163A22B83B" style="width:100%; height:calc(100% - 30px); border:none;"></iframe>
         </div>
-        <div id="appcontainerhoder" style="display:block;">
+        <div id="appcontainerhoder" style="display:none;">
         <div class="appscontainer" align="center">
                 <div class="icon">
                     <img src="images/phone.png" style="width:100%; padding:5px;" />
@@ -101,7 +102,7 @@
     </div>
     </div>
     <div id="taskbar">
-        <img src="images/allapps.png" style="height:100%; vertical-align: middle;"/>
+        <img id="startbutton" src="images/allapps.png" style="height:100%; vertical-align: middle;"/>
         <input id="tasksearchbar" type="search" placeholder="Search for Anything"/>
         <img src="images/mic.png" style="height:100%; vertical-align: middle; padding:5px; margin-left:-35px;"/>
     </div>

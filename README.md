@@ -16,6 +16,7 @@ Amasan-OS is the next generation operating system.
 * 
 
 **View Site https://godfrednanaowusu.github.io/amasan-os/ **
+**<a href="http://example.com/" target="_blank">Hello, world!</a>**
 #
 ## Functions
 * Calls: Voice & Video calls

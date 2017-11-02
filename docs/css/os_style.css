@@ -1,6 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: robotothin;
+    src: url(../fonts/robotothin.ttf); 
+}
+@font-face {
+    font-family:robotolight; color:#4c5357;
+    src: url(../fonts/robotolight.ttf); 
+}
+@font-face {
+    font-family:robotoblack; color:#4c5357;
+    src: url(../fonts/robotoblack.ttf); 
+}
 *{box-sizing:border-box; -webkit-box-sizing:border-box; font-family: arial; outline: none; border:none;}
 html{margin:0; padding:0; width: 100%; height: 100%;}
-body{margin:0; padding:0; width: 100%; height: 100%; background: #efefef; }
+body{margin:0; padding:0; width: 100%; height: 100%; background: #efefef; font-family: robotolight; }
 p,h1,h2,h3,h4,h5,h6{margin:0; padding:2px;}
 #base{position:fixed; top:0; right:0; bottom:0; left:0; background:url('../images/wallpaper.jpg') no-repeat center; background-size:cover;}
 #statusbar{position:fixed; top:0; right:0; bottom:auto; left:0; height:20px; background:rgba(0,0,0,0.75); z-index: 10;  color:#ccc; font-size:80%;}

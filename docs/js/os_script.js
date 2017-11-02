@@ -1,6 +1,6 @@
 $(document).ready(function(e){
     
-    $('#startbutton').on('on', function(e){        
+    $('#startbutton').on('touchstart', function(e){        
         alert();
         // $('#appcontainerhoder').addClass('animated slideInUp');        
         //     //wait for animation to finish before removing classes
@@ -11,4 +11,4 @@ $(document).ready(function(e){
         
         // $('#appcontainerhoder').slideToggle("fast", "swing");
     });
-})
+});

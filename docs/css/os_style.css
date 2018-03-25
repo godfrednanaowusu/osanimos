@@ -1,36 +1,31 @@
 @charset "utf-8";
 /* CSS Document */
 
-@font-face {
-    font-family: robotothin;
-    src: url(../fonts/robotothin.ttf); 
-}
-@font-face {
-    font-family:robotolight; color:#4c5357;
-    src: url(../fonts/robotolight.ttf); 
-}
-@font-face {
-    font-family:robotoblack; color:#4c5357;
-    src: url(../fonts/robotoblack.ttf); 
-}
+/* Universal */
 *{box-sizing:border-box; -webkit-box-sizing:border-box; font-family: arial; outline: none; border:none;}
 html{margin:0; padding:0; width: 100%; height: 100%;}
-body{margin:0; padding:0; width: 100%; height: 100%; background: #efefef; font-family: robotolight; }
+body{margin:0; padding:0; width: 100%; height: 100%; background: #efefef; font-family: arial; }
 p,h1,h2,h3,h4,h5,h6{margin:0; padding:2px;}
-#base{position:fixed; top:0; right:0; bottom:0; left:0; background:url(../images/wallpaper.jpg) no-repeat center; background-size:cover;}
+#base{position:fixed; top:0; right:0; bottom:0; left:0; background:url(../images/homebackground.jpg) no-repeat center; background-size:cover;}
+
+/* Login */
+#loginbase {    background:radial-gradient(rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.77)); position: fixed; top:0; left:0; right:0; bottom:0;}
+
+/* Base OS */
 #statusbar{position:fixed; top:0; right:0; bottom:auto; left:0; height:20px; background:rgba(0, 0, 0, 0.42); z-index: 10;  color:#ccc; font-size:80%;}
 #mainbar{position:fixed; top:0; right:0; bottom:35px; left:0; z-index: 8;}
 #appcontainerhoder {position: absolute; bottom:0; left:0; right:0;}
 #mainbar .appscontainer{  color:#fff; height:auto; width:90%; background:rgba(0, 0, 0, 0.79); margin:20px auto 10px; padding:10px; border-radius: 2px;    box-shadow: 0 0 10px rgba(29, 29, 29, 0.66)}
 #mainbar .appscontainer .icon { color:#fff; text-decoration: none; width:60px; height:60px; margin:5px; display: inline-block; text-align: center; font-size: 70%;}
 #taskbar{position:fixed; top:auto; right:0; bottom:0; left:0; height:35px; background:rgba(0,0,0,0.5); z-index: 9;
-        padding:3px 0 3px 10px; }
-#tasksearchbar{ height: 100%; width:calc(100% - 40px); max-width: 300px; border-radius: 15px 40px 40px 15px; outline:none; padding: 3px 40px 3px 10px; background: rgba(0, 0, 0, 0.29); color:#bababa; transition: all .4s linear; }
+        padding:3px 0 3px 3px; }
+#startbutton {  height: 100%; width: auto; background: none; padding: 0; margin: 0; display:inline-flex; vertical-align:middle;}
+#tasksearchbar{ height: 100%; width:calc(100% - 40px); max-width: 300px; border-radius: 15px 40px 40px 15px; outline:none; padding: 3px 40px 3px 10px; background: rgba(0, 0, 0, 0.29); color:#eee; transition: all .4s linear; display:inline-flex; vertical-align:middle; }
 #tasksearchbar:focus{ max-width: 400px;}
 
 /* Window Manager Interface */
-#windowframe{display:none; background:#fff; width: 100%; height: 100%; position: relative;}
-#windowframe .titlebar{background: linear-gradient(#eeedee, #d2d0d2); position:absolute; top:0; right:0; left:0; height:20px; padding:3px; -webkit-user-drag: element;   }
+#windowframe{display:none; background:#fff; width: 100%; height: 100%; position: relative; border-radius:4px;}
+#windowframe .titlebar{background: linear-gradient(#eeedee, #d2d0d2); position:absolute; top:0; right:0; left:0; height:20px; padding:3px; -webkit-user-drag: element;  border-radius:4px 4px 0 0;  }
 #windowframe .titlebar #title{  float:left; font-size: 11px; color:#292929; padding: 1px; }
 #windowframe .titlebar #cascadebut{ background:#ffbd2e; border: 1px solid #dfa023; height:100%; border-radius:3px; margin:0 4px; float:right; display:inline-block; }
 #windowframe .titlebar #maximizebut{ background:#28ca42; border: 1px solid #10a922; height:100%; border-radius:3px; margin:0 4px; float:right; display:inline-block; }

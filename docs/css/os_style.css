@@ -18,13 +18,20 @@ html{margin:0; padding:0; width: 100%; height: 100%;}
 body{margin:0; padding:0; width: 100%; height: 100%; background: #efefef; font-family: robotolight; }
 p,h1,h2,h3,h4,h5,h6{margin:0; padding:2px;}
 #base{position:fixed; top:0; right:0; bottom:0; left:0; background:url(../images/wallpaper.jpg) no-repeat center; background-size:cover;}
-#statusbar{position:fixed; top:0; right:0; bottom:auto; left:0; height:20px; background:rgba(0, 0, 0, 0.96); z-index: 10;  color:#ccc; font-size:80%;}
-#mainbar{position:fixed; top:20px; right:0; bottom:40px; left:0; background:none; z-index: 8;}
+#statusbar{position:fixed; top:0; right:0; bottom:auto; left:0; height:20px; background:rgba(0, 0, 0, 0.42); z-index: 10;  color:#ccc; font-size:80%;}
+#mainbar{position:fixed; top:0; right:0; bottom:35px; left:0; z-index: 8;}
 #appcontainerhoder {position: absolute; bottom:0; left:0; right:0;}
-#mainbar .appscontainer{  color:#fff; height:auto; width:90%; background:rgba(0,0,0,0.5); margin:20px auto; padding:10px; border-radius: 2px;    box-shadow: 0 0 10px rgba(29, 29, 29, 0.66)}
+#mainbar .appscontainer{  color:#fff; height:auto; width:90%; background:rgba(0, 0, 0, 0.79); margin:20px auto 10px; padding:10px; border-radius: 2px;    box-shadow: 0 0 10px rgba(29, 29, 29, 0.66)}
 #mainbar .appscontainer .icon { color:#fff; text-decoration: none; width:60px; height:60px; margin:5px; display: inline-block; text-align: center; font-size: 70%;}
-#windowframe{display:none; background:none; width: 100%; height: 100%; position: relative;}
-#windowframe .bottombar{background: rgb(211, 47, 47); position:absolute; bottom:0; right:0; height:30px; padding:5px; box-shadow: 0 0 2px #000;  }
-#taskbar{position:fixed; top:auto; right:0; bottom:0; left:0; height:40px; background:rgba(0,0,0,0.5); z-index: 9;
-        padding:5px; }
-#tasksearchbar{ height: 100%; width:calc(100% - 40px); max-width: 400px; border-radius: 40px; outline:none; padding: 3px 40px 3px 20px; }
+#taskbar{position:fixed; top:auto; right:0; bottom:0; left:0; height:35px; background:rgba(0,0,0,0.5); z-index: 9;
+        padding:3px 0 3px 10px; }
+#tasksearchbar{ height: 100%; width:calc(100% - 40px); max-width: 300px; border-radius: 15px 40px 40px 15px; outline:none; padding: 3px 40px 3px 10px; background: rgba(0, 0, 0, 0.29); color:#bababa; transition: all .4s linear; }
+#tasksearchbar:focus{ max-width: 400px;}
+
+/* Window Manager Interface */
+#windowframe{display:none; background:#fff; width: 100%; height: 100%; position: relative;}
+#windowframe .titlebar{background: linear-gradient(#eeedee, #d2d0d2); position:absolute; top:0; right:0; left:0; height:20px; padding:3px; -webkit-user-drag: element;   }
+#windowframe .titlebar #title{  float:left; font-size: 11px; color:#292929; padding: 1px; }
+#windowframe .titlebar #cascadebut{ background:#ffbd2e; border: 1px solid #dfa023; height:100%; border-radius:3px; margin:0 4px; float:right; display:inline-block; }
+#windowframe .titlebar #maximizebut{ background:#28ca42; border: 1px solid #10a922; height:100%; border-radius:3px; margin:0 4px; float:right; display:inline-block; }
+#windowframe .titlebar #closebut{ background:#ff5f58; border: 1px solid #e23e38; height:100%; border-radius:3px; margin:0 4px; float:right; display:inline-block;  }

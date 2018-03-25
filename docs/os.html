@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="css/os_style.css">
+<!-- <link rel="stylesheet" href="css/animate.css"> -->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/os_script.js"></script>
+<style>
+    
+</style>
+</head>
+<body>
+<div id="base" style="display:none;">
+    <div id="statusbar">
+
+        <div style="float:right; height:100%; padding:3px;">
+            <img src="images/bluetooth.svg" style="height:100%; display:block; float:left; margin:0 3px;"/>
+            <img src="images/wifi.svg" style="height:100%; display:block; float:left; margin:0 3px;"/>
+            <img src="images/battery.svg" style="height:100%; display:block; float:left; margin:0 3px;"/>
+            <span style="display:block; float:left; margin:0 3px; font-size:12px; color:#fff;"> 9:45PM</span>   
+            <img src="images/power.svg" style="height:100%; display:block; float:left; margin:0 10px;"/>
+        </div>
+
+    </div>
+    <div id="mainbar">
+        <div id="windowframe" style="">            
+            
+        </div>
+        <div id="appcontainerhoder" style="display:none;">
+        <div class="appscontainer" align="center">
+                <div data-app="" class="icon" onclick="goto_app('apps/phone/')">
+                    <img src="images/phone.svg" style="width:100%; padding:8px;" />
+                    <p>Phone</p>
+                </div>
+                <div data-app="" class="icon" onclick="goto_app('https://www.dogpile.com/')">
+                    <img src="images/browser.svg" style="width:100%; padding:8px;" />
+                    <p>Browser</p>
+                </div>
+                <div data-app="" class="icon" onclick="goto_app('apps/tv/')">
+                    <img src="images/television.svg" style="width:100%; padding:8px;" />
+                    <p>TV</p>
+                </div>
+                <div data-app="" class="icon" onclick="goto_app('apps/radio/')">
+                    <img src="images/radio.svg" style="width:100%; padding:8px;" />
+                    <p>Radio</p>
+                </div>
+                <div data-app="" class="icon" onclick="goto_app('apps/calculator/')">
+                    <img src="images/calculator.svg" style="width:100%; padding:8px;" />
+                    <p>Calculator</p>
+                </div>
+                <div data-app="" class="icon" onclick="goto_app('apps/mail/')">
+                    <img src="images/mail.svg" style="width:100%; padding:8px;" />
+                    <p>Mail</p>
+                </div>
+                <div data-app="" class="icon" onclick="goto_app('apps/dictionary/')">
+                    <img src="images/dictionary.svg" style="width:100%; padding:8px;" />
+                    <p>Dictionary</p>
+                </div>
+                <div data-app="" class="icon" onclick="goto_app('apps/translator/')">
+                    <img src="images/translator.svg" style="width:100%; padding:8px;" />
+                    <p>Translator</p>
+                </div>
+                <div data-app="" class="icon" onclick="goto_app('apps/flashlight/')">
+                    <img src="images/flashlight.svg" style="width:100%; padding:8px;" />
+                    <p>Flashlight</p>
+                </div>
+                <div data-app="" class="icon" onclick="goto_app('https://docs.google.com/viewer?')">
+                    <img src="images/office.svg" style="width:100%; padding:8px;" />
+                    <p>Office</p>
+                </div>
+                <div data-app="" class="icon" onclick="goto_app('apps/graphics/')">
+                    <img src="images/graphics.svg" style="width:100%; padding:8px;" />
+                    <p>Graphics</p>
+                </div>
+                <div data-app="" class="icon"  onclick="goto_app('apps/games/')">
+                    <img src="images/games.svg" style="width:100%; padding:8px;" />
+                    <p>Games</p>
+                </div>
+                <div data-app="" class="icon" onclick="goto_app('apps/media/')">
+                    <img src="images/media.svg" style="width:100%; padding:8px;" />
+                    <p>Media</p>
+                </div>
+                <div data-app="" class="icon" onclick="goto_app('apps/files/')">
+                    <img src="images/files.svg" style="width:100%; padding:8px;" />
+                    <p>Files</p>
+                </div>
+                <hr style="border:red;">
+
+                <div>
+                    <a href="/login.html">Power</a>
+                </div>
+        </div>
+    </div>
+    </div>
+    <div id="taskbar">
+        <button  id="startbutton" onclick="toggleStartMenu()" >
+            <img src="images/menu.svg" style="height:25px; vertical-align: middle; padding:2px 5px; "/>
+        </button>
+        <input id="tasksearchbar" type="search" placeholder="Search for Anything"/>
+        <img src="images/microphone.svg" style="height:100%; vertical-align: middle; padding:5px; margin-left:-35px;"/>
+    
+        <div id="bottomrightbar" style="float:right; height:100%; padding:7px;">
+            <img src="images/bluetooth.svg" style="height:100%; display:block; float:left; margin:0 3px;"/>
+            <img src="images/wifi.svg" style="height:100%; display:block; float:left; margin:0 3px;"/>
+            <img src="images/battery.svg" style="height:100%; display:block; float:left; margin:0 3px;"/>
+            <span style="display:block; float:left; margin:0 3px; font-size:12px; color:#fff;"> 9:45PM</span>   
+            <img src="images/power.svg" style="height:100%; display:block; float:left; margin:0 10px;"/>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

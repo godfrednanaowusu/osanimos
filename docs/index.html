@@ -13,24 +13,9 @@
 </head>
 <body>
 <div id="base">
-    <div id="statusbar">
-        <div style="float:left; height:100%; padding:4px;">
-            <img src="images/message.png" style="height:100%; display:block; float:left;"/>
-        </div>
-        <div style="float:right; height:100%; padding:4px;">
-            <img src="images/bluetooth.png" style="height:100%; display:block; float:left; margin:0 3px;"/>
-            <img src="images/network.png" style="height:100%; display:block; float:left; margin:0 3px;"/>
-            <img src="images/wifi.png" style="height:100%; display:block; float:left; margin:0 3px;"/>
-            <img src="images/battery.png" style="height:100%; display:block; float:left; margin:0 3px;"/>
-            <span style="display:block; float:left; margin:0 3px;"> 9:45</span>    
-        </div>
-    </div>
     <div id="mainbar">
-        <div id="windowframe" >            
-            <iframe src="https://www.bing.com/?toHttps=1&redig=5F3CEBB588EF4F0887C083163A22B83B" style="width:100%; height:100%; border:none;"></iframe>
-            <div class="bottombar">
-                    <img src="images/android_gear.png" style="height:100%; display:block; float:left; margin:0 3px;"/>  
-            </div>
+        <div id="windowframe" style="">            
+            
         </div>
         <div id="appcontainerhoder" style="display:none;">
         <div class="appscontainer" align="center">
@@ -74,7 +59,7 @@
                     <img src="images/flashlight.png" style="width:100%; padding:8px;" />
                     <p>Flashlight</p>
                 </div>
-                <div data-app="" class="icon" onclick="goto_app('apps/office/')">
+                <div data-app="" class="icon" onclick="goto_app('https://docs.google.com/viewer?')">
                     <img src="images/office.png" style="width:100%; padding:8px;" />
                     <p>Office</p>
                 </div>
@@ -99,10 +84,18 @@
     </div>
     <div id="taskbar">
         <button  id="startbutton" onclick="toggleStartMenu()" style=" height: 100%; width: 30px; background: none; padding: 0; margin: 0; "
-        ><img src="images/allapps.png" style="height:100%; vertical-align: middle;"/>
+        ><img src="images/allapps.png" style="height:25px; vertical-align: middle;"/>
         </button>
         <input id="tasksearchbar" type="search" placeholder="Search for Anything"/>
         <img src="images/mic.png" style="height:100%; vertical-align: middle; padding:5px; margin-left:-35px;"/>
+    
+        <div style="float:right; height:100%; padding:9px;">
+            <img src="images/bluetooth.png" style="height:100%; display:block; float:left; margin:0 3px;"/>
+            <img src="images/network.png" style="height:100%; display:block; float:left; margin:0 3px;"/>
+            <img src="images/wifi.png" style="height:100%; display:block; float:left; margin:0 3px;"/>
+            <img src="images/battery.png" style="height:100%; display:block; float:left; margin:0 3px;"/>
+            <span style="display:block; float:left; margin:0 3px;"> 9:45</span>    
+        </div>
     </div>
 </div>
 </body>

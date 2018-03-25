@@ -1,4 +1,5 @@
 $(document).ready(function(e){
+    $('#base').show();
 
     // Operating Device 
     var isMobile = {
@@ -12,7 +13,12 @@ $(document).ready(function(e){
 
     if(isMobile.any()) {
         // It is mobile
-        alert();
+        $('#statusbar').show();
+        $('#bottomrightbar').hide();
+        $('#mainbar').css({top:'20px'});
+     }else{
+        $('#statusbar').hide();
+        $('#bottomrightbar').show();
      }
 
      $('.titlebar').click(function(e){
@@ -32,7 +38,7 @@ alert();
 });
 
 function toggleStartMenu(){
-    $('#appcontainerhoder').slideToggle();
+    $('#appcontainerhoder').slideToggle('fast');
 }
 
 function goto_app(path){
@@ -41,10 +47,16 @@ function goto_app(path){
         $('#windowframe').empty();
 
         $('#windowframe').append('<iframe src="'+path+'" style="width:100%; height:calc(100% - 20px); border:none; position:absolute; top:20px; right:0; bottom:0; left:0;"></iframe>');
-        $('#windowframe').append('<div class="titlebar" draggable="true"><p id="title">Window Frame</p><button id="closebut" type="button" onclick="close_app()" ></button> <button type="button" id="cascadebut" ></button> <button type="button" id="maximizebut" ></button>  </div>')
+        $('#windowframe').append('<div class="titlebar" draggable="true"><p id="title">Window Frame</p><button id="closebut" type="button" onclick="close_app()" ></button> <button type="button" id="cascadebut" onclick="cascade_app()"></button> <button type="button" id="maximizebut" onclick="close_app()"></button>  </div>')
     
 }
 
+function cascade_app(){
+    // $('#appcontainerhoder').hide();
+    $('#windowframe').css({width:'500px', height:'400px', 'margin':'5% auto 0'});
+    // $('#windowframe').hide();
+    
+}
 function close_app(){
     $('#appcontainerhoder').hide();
     $('#windowframe').empty();

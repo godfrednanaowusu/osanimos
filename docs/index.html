@@ -3,18 +3,24 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css"/>  
+<!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
 <link rel="stylesheet" href="css/os_style.css">
 <!-- <link rel="stylesheet" href="css/animate.css"> -->
 <!-- <script src="js/jquery-1.11.2.min.js"></script> -->
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-  
-  <script
-  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-  crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+
+
+
 
 <script src="js/os_script.js"></script>
 <style>
@@ -37,18 +43,49 @@
     </div>
     <div id="mainbar">
         
-        <div id="appcontainerholder" class="taskbarholders" style="display:none;">
-        <div class="appscontainer" align="center">
+        
+    </div>
+    </div>
+    <div id="taskbar">
+        <button  id="startbutton" onclick="toggleStartMenu()" >
+            <img src="images/menu.svg" style="height:25px; vertical-align: middle; padding:4px 5px; "/>
+        </button>
+        <input id="tasksearchbar" type="search" placeholder="Search for Anything"/>
+        <img src="images/microphone.svg" style="height:100%; vertical-align: middle; padding:5px; margin-left:-35px;"/>
+    
+        <div id="bottomrightbar" style="float:right; height:100%; user-select: none;">
+            <div style="height:100%; width:auto; padding:5px; display:inline-block; vertical-align:middle; ">
+                <img src="images/bluetooth.svg" style="height:100%; display:block; float:left; margin:0 3px;"/>
+                <img src="images/wifi.svg" style="height:100%; display:block; float:left; margin:0 3px;"/>
+                <img src="images/battery.svg" style="height:100%; display:block; float:left; margin:0 3px;"/>
+                <span class="batterypercentage" style="display:block; float:left; margin:0 3px; font-size:12px; color:#fff;"> 0%</span>
+                <span style="display:block; float:left; margin:0 3px; font-size:12px; color:#fff;"> 9:45PM</span>   
+                
+            </div>
+            <img src="images/power.svg" onclick="togglePowerMenu()" style="height:100%; display:inline-block; vertical-align:middle;  padding:5px; margin:0 10px 0 0; "/>
+        </div>
+    </div>
+
+    <div id="appcontainerholder" class="taskbarholders" style="display:none;">
+        <div id="appscontainer" align="center" class="slide_div">
+            <div data-app="" class="icon" onclick="goto_app('apps/settings/', 'Settings')">
+                <img src="images/settings.svg"/>
+                <p>Settings</p>
+            </div>
             <div data-app="" class="icon" onclick="goto_app('apps/phone/', 'Phone')">
                 <img src="images/phone.svg"/>
                 <p>Phone</p>
+            </div>
+            <div data-app="" class="icon" onclick="goto_app('apps/harddrive/', 'Drive')">
+                <img src="images/harddrive.svg"/>
+                <p>Drive</p>
             </div>
             <div data-app="" class="icon" onclick="goto_app('apps/files/', 'Files')">
                 <img src="images/files.svg"/>
                 <p>Files</p>
             </div>
-            <div data-app="" class="icon" onclick="goto_app('https://www.dogpile.com/', 'Browser')">
-                <img src="images/browser.svg"/>
+            <div data-app="" class="icon" onclick="goto_app('apps/browser/', 'Browser')">
+                <img src="images/search.svg"/>
                 <p>Browser</p>
             </div>
             <div data-app="" class="icon" onclick="goto_app('apps/tv/', 'Television')">
@@ -98,27 +135,6 @@
                 
 
         </div>
-    </div>
-    </div>
-    <div id="taskbar">
-        <button  id="startbutton" onclick="toggleStartMenu()" >
-            <img src="images/menu.svg" style="height:25px; vertical-align: middle; padding:4px 5px; "/>
-        </button>
-        <input id="tasksearchbar" type="search" placeholder="Search for Anything"/>
-        <img src="images/microphone.svg" style="height:100%; vertical-align: middle; padding:5px; margin-left:-35px;"/>
-    
-        <div id="bottomrightbar" style="float:right; height:100%; user-select: none;">
-            <div style="height:100%; width:auto; padding:5px; display:inline-block;">
-                <img src="images/bluetooth.svg" style="height:100%; display:block; float:left; margin:0 3px;"/>
-                <img src="images/wifi.svg" style="height:100%; display:block; float:left; margin:0 3px;"/>
-                <img src="images/battery.svg" style="height:100%; display:block; float:left; margin:0 3px;"/>
-                <span class="batterypercentage" style="display:block; float:left; margin:0 3px; font-size:12px; color:#fff;"> 0%</span>
-                <span style="display:block; float:left; margin:0 3px; font-size:12px; color:#fff;"> 9:45PM</span>   
-                
-            </div>
-            <img src="images/power.svg" onclick="togglePowerMenu()" style="height:100%; display:inline-block; padding:5px; margin:0 10px 0 0; "/>
-        </div>
-    </div>
 
     <div id="powercontainerholder" class="taskbarholders" style="display:none;">
         <div class="powercontainer" align="center">

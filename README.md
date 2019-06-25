@@ -1,8 +1,8 @@
-# amasan-os
+# osanim-os
 **Platform Agnostic Operating System**
 This operating systems is intended to be 100% compatible with IOT standards, compatible with all popular hardware/devices/softwares.
 It has the beauty of apple products, Windows' abundant software resources, efficiency and security of linux.
-Amasan-OS is the next generation operating system.
+Osanim-OS is the next generation operating system.
 #
 * Turning these devices on will be instantenous
 * Its processing power will be as powerful as quantum
@@ -15,7 +15,7 @@ Amasan-OS is the next generation operating system.
 * Calls, Messages, Browsing etc will all come under one subscription service. (e.g $10.00/month). A contract will then be entered with the telcos.
 * 
 
-**View Site https://godfrednanaowusu.github.io/amasan-os/ **
+**View Site https://godfrednanaowusu.github.io/osanim-os/ **
 
 #
 ## Functions

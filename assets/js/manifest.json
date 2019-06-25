@@ -1,0 +1,10 @@
+{
+    "name": "Osanim Operating System",
+    "short_name": "Osanim OS",
+    "icons": [],
+    "start_url": "/",
+    "gcm_sender_id": "",
+    "display": "fullscreen",
+    "background_color": "#FF9800",
+    "theme_color": "#FF9800"
+}

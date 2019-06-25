@@ -1,0 +1,115 @@
+<div style="position:relative; height:100%; width:100%;">
+    <table style="width: 100%; height:100%; display:block;">
+        <tbody style="display:block; width: 100%; height:100%;">
+            <tr>
+                <th colspan="2" class="toppane">
+                    <div>
+                        <p>slfjsljfksdfjsl</p>
+                        <p>slfjsljfksdfjsl</p>
+                    </div>
+                    
+                </th>
+            </tr>
+            <tr style="height:calc(100% - 60px); ">
+                <th class="leftpane">
+                    <div>
+                        <ul>
+                            <li>File</li>
+                            <li>File</li>
+                            <li>File</li>
+                            <li>File</li>
+                            <li>File</li>
+                            <li>File</li>
+                            <li>File</li>
+                            <li>File</li>
+                            <li>File</li>
+                        </ul>
+                    </div>
+                </th>
+                <th class="rightpane">
+                        <div class="folderpage" >
+                                <div data-app="" class="icon" onclick="goto_app('apps/phone/', 'Phone')">
+                                    <img src="images/bluefolder.svg"/>
+                                    <p>Phone</p>
+                                </div>
+                                <div data-app="" class="icon" onclick="goto_app('apps/files/', 'Files')">
+                                    <img src="images/bluefolder.svg"/>
+                                    <p>Files</p>
+                                </div>
+                                <div data-app="" class="icon" onclick="goto_app('https://www.dogpile.com/', 'Browser')">
+                                    <img src="images/bluefolder.svg"/>
+                                    <p>Browser</p>
+                                </div>
+                                <div data-app="" class="icon" onclick="goto_app('apps/tv/', 'Television')">
+                                    <img src="images/bluefolder.svg"/>
+                                    <p>Television</p>
+                                </div>
+                                <div data-app="" class="icon" onclick="goto_app('apps/radio/', 'Radio')">
+                                    <img src="images/bluefolder.svg"/>
+                                    <p>Radio</p>
+                                </div>
+                                <div data-app="" class="icon" onclick="goto_app('apps/calculator/', 'Calculator')">
+                                    <img src="images/bluefolder.svg"/>
+                                    <p>Calculator</p>
+                                </div>
+                                <div data-app="" class="icon" onclick="goto_app('apps/mail/', 'Mail')">
+                                    <img src="images/bluefolder.svg"/>
+                                    <p>Mail</p>
+                                </div>
+                                <div data-app="" class="icon" onclick="goto_app('apps/dictionary/', 'Dictionary')">
+                                    <img src="images/bluefolder.svg"/>
+                                    <p>Dictionary</p>
+                                </div>
+                                <div data-app="" class="icon" onclick="goto_app('apps/translator/', 'Translator')">
+                                    <img src="images/bluefolder.svg"/>
+                                    <p>Translator</p>
+                                </div>
+                                <div data-app="" class="icon" onclick="goto_app('apps/flashlight/', 'Flashlight')">
+                                    <img src="images/bluefolder.svg"/>
+                                    <p>Flashlight</p>
+                                </div>
+                                <div data-app="" class="icon" onclick="goto_app('https://docs.google.com/viewer?', 'Office')">
+                                    <img src="images/bluefolder.svg"/>
+                                    <p>Office</p>
+                                </div>
+                                <div data-app="" class="icon" onclick="goto_app('apps/graphics/', 'Graphics')">
+                                    <img src="images/bluefolder.svg"/>
+                                    <p>Graphics</p>
+                                </div>
+                                <div data-app="" class="icon"  onclick="goto_app('apps/games/', 'Games')">
+                                    <img src="images/bluefolder.svg"/>
+                                    <p>Games</p>
+                                </div>
+                                <div data-app="" class="icon" onclick="goto_app('apps/media/', 'Media')">
+                                    <img src="images/bluefolder.svg"/>
+                                    <p>Media</p>
+                                </div>
+                                    
+                    
+                            </div>
+                </th>
+            </tr>
+        </tbody>
+    </table>    
+</div>
+<style>
+    .toppane { background:#ddd; height:60px; }
+    .leftpane { background:#ccc; min-width: 170px; width: 170px; height:calc(100% - 60px); }
+    .rightpane { background:#fff; width: calc(100% - 170px); height:calc(100% - 60px); }
+    tbody { display: table; }
+    /* th {display: table; width:100%; } */
+    tr {display: table; width:100%; }
+    td, th { border: 1px solid #ccc; }
+    table, th { overflow:hidden; white-space: nowrap; text-overflow: ellipsis; }
+
+    .folderpage{  color:#000; height:100%; width:100%; padding:10px; display:block;}
+    .folderpage .icon { color:#000; text-decoration: none; width:50px; height:50px; margin:5px; display: inline-block; text-align: center; font-size: 90%;}
+    .folderpage .icon img { width:100%; padding:10px;}
+
+</style>
+
+<script>
+    $(function () {
+        $('table th').resizable({ handles: 'e' });
+    });
+</script>

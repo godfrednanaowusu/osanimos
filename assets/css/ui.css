@@ -1,0 +1,141 @@
+@font-face {
+    font-family:robotothin; 
+    src: url(../fonts/robotothin.ttf); 
+}
+@font-face {
+    font-family:robotolight; 
+    src: url(../fonts/robotolight.ttf); 
+}
+@font-face {
+    font-family:robotoblack; 
+    src: url(../fonts/robotoblack.ttf); 
+}
+
+html {padding:0; margin:0; position: absolute; top:0; right:0; bottom:0; left:0; background:#efefef;}
+body {padding:0; margin:0; position: absolute; top:0; right:0; bottom:0; left:0; background:#efefef; font-family: robotolight}
+* {box-sizing: border-box; }
+p 						{	margin:0px;	}
+h1 						{	margin:0px;	}
+h2 						{	margin:0px;	}
+h3 						{	margin:0px;	}
+h4 						{	margin:0px;	}
+h5 						{	margin:0px;	}
+h6 						{	margin:0px;	}
+#mainbody {background: url('../images/tinylogo.png') no-repeat center #2d2d2d;}
+
+/* Control Styles */
+input {display:block; border:1px solid #ddd; border-radius: 4px; padding:5px 10px; width:100%; }
+
+
+
+
+/* Login Styles */
+#logincontainer{position: fixed; top:0; right:0; bottom:0; left:0; 
+    background: linear-gradient(rgba(45, 45, 45, 0.18), rgba(45, 45, 45, 0.23)), url(../images/homebackground.jpg);
+    background-size: cover;    background-position: center;    background-color: #1ABC9C;    background-repeat: no-repeat;
+}
+#loginholder {display: block; margin:25% auto; padding:10px; width:90%; max-width:250px;}
+
+
+/* Main Styles */
+#desktop{position: fixed; top:0; right:0; bottom:0; left:0;
+    background: linear-gradient(rgba(45, 45, 45, 0.18), rgba(45, 45, 45, 0.23)), url(../images/homebackground.jpg);
+    background-size: cover;    background-position: center;    background-color: #1ABC9C;    background-repeat: no-repeat;}
+
+#desktop #iconsholder {position: absolute; top:0; right:0; bottom:40px; left:0; background:none;}
+#desktop #taskbar {position: absolute;  right:5px; bottom:5px; left:5px; height: 40px; background:rgba(0, 0, 0, 0.4); border-radius:5px;}
+#desktop #taskbar #left{ float:left; height:100%; padding:0px; }
+#desktop #taskbar #right{ float:right; height:100%; padding:0px; }
+#desktop #taskbar .iconparent { padding:0; margin:0;}
+#desktop #taskbar .icon { padding:0; margin:0; float:left; list-style-type: none; }
+#desktop #taskbar .icon:first-child {border-radius:0; border-top-left-radius: 5px; border-bottom-left-radius: 5px; }
+#desktop #taskbar .icon:last-child {border-radius:0; border-top-right-radius: 5px; border-bottom-right-radius: 5px; }
+#desktop #taskbar .icon a { background:transparent; height:40px; float:left; text-align: right; text-decoration: none; color:#fff; margin:0 2px; display: inline-block; border-top: 2px solid transparent; border-bottom: 2px solid transparent; padding:5px;}
+#desktop #taskbar .icon a.active { border-bottom: 2px solid rgb(56, 124, 186);}
+#desktop #taskbar .icon a i { vertical-align: middle; font-size:90%; padding-top:4px; }
+#desktop #taskbar .icon img { margin:0; height: 100%;}
+#desktop #taskbar .icon:hover {background:rgba(0, 0, 0, 0.4);}
+
+
+
+#desktop #startmenu { display:none; padding:0px; width:100%; max-width:450px; height:500px; background:transparent; position: absolute; bottom:45px; left:5px; right:0; border-radius:5px;}
+#desktop #startmenu #controlsdiv { width:40px; border-radius:5px; background:rgba(0, 0, 0, 0.8);  position: absolute; bottom: 5px;  }
+#desktop #startmenu #controlsdiv .iconparent { padding:0; margin:0; }
+#desktop #startmenu #controlsdiv .icon { padding:0; margin:0; float:left; list-style-type: none;}
+#desktop #startmenu #controlsdiv .icon:first-child {border-radius:0; border-top-left-radius: 5px; border-top-right-radius: 5px; }
+#desktop #startmenu #controlsdiv .icon:last-child {border-radius:0; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; }
+#desktop #startmenu #controlsdiv .icon a { width:100%; margin:2px 0; display: list-item; list-style-type: none; padding: 10px; }
+#desktop #startmenu #controlsdiv .icon img { width:100%;  }
+#desktop #startmenu #controlsdiv .icon:hover {background:rgba(0, 0, 0, 0.4);}
+#desktop #startmenu #controlsdiv .icon.active { }
+#desktop #startmenu #contentdiv { padding:5px; width:calc(100% - 55px); margin-left:45px; height:calc(100% - 10px); border-radius:5px; background:rgba(0, 0, 0, 0.8);  position: absolute; bottom: 5px;  }
+#desktop #startmenu #contentdiv .iconparent {  padding:0; margin:0; width:100%; text-align: center; height:100%; overflow-y: scroll;}
+#desktop #startmenu #contentdiv .icon { padding:0; margin:5px; float:left; list-style-type: none;  border-radius:5px; }
+#desktop #startmenu #contentdiv .icon:first-child { }
+#desktop #startmenu #contentdiv .icon:last-child { }
+#desktop #startmenu #contentdiv .icon a { width:64px; height: auto; text-decoration: none; margin:2px 0; display: list-item; list-style-type: none; font-size:9px; color: rgba(255, 255, 255, 0.9); }
+#desktop #startmenu #contentdiv .icon img { width:100%; display: block; margin-bottom: 5px; background:rgba(0, 0, 0, 0.1); padding:10px; border-radius:5px; }
+#desktop #startmenu #contentdiv .icon img:hover { background:rgba(0, 0, 0, 0.4); }
+#desktop #startmenu #contentdiv .icon:hover {}
+#desktop #startmenu #contentdiv .icon.active { border-bottom: 2px solid rgb(56, 124, 186);}
+
+#desktop #sidebar { display:none; width:100%; max-width:300px; background:rgba(0, 0, 0, 0.4); position: fixed; top:0; bottom:50px; right:5px; border-radius:5px;}
+#desktop #sidebar .iconparent { padding:5px; margin:0; width:100%; height:100%;     overflow-y: scroll;}
+#desktop #sidebar .icon { padding:0; margin:0; width:100%; list-style-type: none; background: rgba(0, 0, 0, 0.2); margin-bottom:5px; border-radius: 5px;}
+#desktop #sidebar .icon:first-child { }
+#desktop #sidebar .icon:last-child {}
+#desktop #sidebar .icon a { width:100%; height: auto; margin:2px 0; display: list-item; padding:5px; list-style-type: none; color:rgba(255, 255, 255, 0.70); }
+#desktop #sidebar .icon img { width:25px; height:auto; float:none; display: inline-block; vertical-align: middle;  }
+#desktop #sidebar .icon .message { text-align: left; display: inline-block; vertical-align: middle; padding:5px; font-size:12px; width:calc(100% - 30px); }
+#desktop #sidebar .icon:hover {background:rgba(0, 0, 0, 0.4);}
+#desktop #sidebar .icon.active { }
+
+#desktop #taskbar .icons {height:100%; margin:0 5px; }
+#desktop #taskbar .widgets {height:100%; margin:0 5px; color:#ddd; }
+
+#desktop #iconsholder { background:none; position: fixed; top: 5px; left: 5px; right:5px; bottom:50px; border-radius:5px;}
+
+#desktop #windowholder { background:none; position: fixed; top: 5px; left: 5px; right:5px; bottom:50px; border-radius:5px;}
+#desktop #windowholder { }
+#desktop #windowholder .iconparent { padding:0px; margin:0; width:100%; height:100%; }
+#desktop #windowholder .icon { background:transparent; padding:0; margin:0; width:50px; list-style-type: none; margin-bottom:5px; border-radius: 5px;}
+#desktop #windowholder .icon:hover {  }
+#desktop #windowholder .icon:first-child { }
+#desktop #windowholder .icon:last-child {}
+#desktop #windowholder .icon a { width:100%; height: auto; margin:2px 0; display: list-item; padding:5px; list-style-type: none; color:#fff; font-size: 70%; text-shadow: 0 0 2px #000; text-align: center; text-decoration: none; }
+#desktop #windowholder .icon img { width:100%; }
+
+/* Window Manager Interface */
+.windowframe{background:none; min-width: 200px; width: 100%; min-height: 100px; height: 100%; position: absolute; left:0; top:0; border-radius:4px 4px 0 0; box-shadow: 0 0 5px rgba(0, 0, 0, 0.65); }
+.windowframe .titlebar{user-select: none; background: rgba(0, 0, 0, 0.7); position: relative; height:25px; padding:3px; -webkit-user-drag: element;  border-radius:5px 5px 0 0; }
+.windowframe .titlebar #title{  float:left; font-size: 12px; color:#efefef; padding: 1px; margin-left: 5px; }
+.windowframe .titlebar #cascadebut{ background:#ffbd2e; border: 1px solid #dfa023; outline:none; height:15px; width:15px; border-radius:15px; margin:2px 4px; float:right; display:inline-block; padding: 0; color: #ffe8e7; font-size: 60%; }
+.windowframe .titlebar #minimizebut{ background:#28ca42; border: 1px solid #10a922; outline:none; height:15px; width:15px; border-radius:15px; margin:2px 4px; float:right; display:inline-block; padding: 0; color: #ffe8e7; font-size: 60%; }
+.windowframe .titlebar #closebut{ background:#ff5f58; border: 1px solid #e23e38; outline:none; height:15px; width:15px; border-radius:15px; margin:2px 4px; float:right; display:inline-block; padding: 0; color: #ffe8e7; font-size: 60%;  }
+.windowframe .windowframecontent { background:#fff; user-select: text; width: 100%; height: calc(100% - 25px); border-radius:0 0 5px 5px; }
+.windowframe .windowframecontent iframe { background:#fff; border-radius:0 0 5px 5px;}
+
+.windowcascaded { 
+        transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: initial;}
+.windowmaximised { 
+        transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: initial;}
+
+
+
+
+
+/*this is used to style scrollbars webkit*/
+::-webkit-scrollbar              { width:10px; height:0px; background:transparent; padding:1px; }
+::-webkit-scrollbar-button:vertical:start       { height:0; background: rgb(22, 140, 75);  }
+::-webkit-scrollbar-button:vertical:end       { height: 0; background: rgb(22, 140, 75);}
+::-webkit-scrollbar-track        { background:rgba(0, 0, 0, 0.1); border-radius:5px; }
+::-webkit-scrollbar-track-piece  {  }
+::-webkit-scrollbar-thumb        { background:rgba(0, 0, 0, 0.9); border-radius:5px; border: 1px solid #000; }
+::-webkit-scrollbar-corner       { /* 6 */ }
+::-webkit-resizer                { /* 7 */ }

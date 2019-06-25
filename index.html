@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="assets/js/scripthelper.min.js"></script>
+    <div id="head"></div>
+    <script>
+        $(function () {
+            $('#head').load("base_head.html");
+        });
+    </script>
+</head>
+<body id="mainbody" style="display: none">
+    <div id="desktop">
+        <div id="iconsholder">
+
+        </div>
+        <div id="windowholder">
+            <ul class="iconparent">
+                <li class="icon"><a class="applink" data-path="apps/files/"><img src="assets/images/folder.png" />
+                        Desktop</a></li>
+                <li class="icon"><a class="applink" data-path="apps/files/"><img src="assets/images/recyclebin.ico" />
+                        Bin</a></li>
+            </ul>
+
+        </div>
+        <div id="startmenu">
+            <div id="controlsdiv" class="anim_slideup">
+                <ul class="iconparent">
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/harddrive.svg" /></a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/search.svg" /></a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/settings.svg" /></a></li>
+                    <li class="icon anim_zoomIn"><a href="login.html"><img src="assets/images/power.svg" /></a></li>
+                </ul>
+            </div>
+            <div id="contentdiv" class="anim_slideup">
+                <ul class="iconparent">
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/google-chrome_192x192.png" />
+                            Chrome</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/skype.png" /> Skype</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/Gmail.png" />Mail</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/ps-1.png" />Photoshop</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/word.png" />Word</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/excel.png" />Excel</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/powerpoint.png" />PowerPoint</a>
+                    </li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/onedrive.png" />Onedrive</a></li>
+                    <li class="icon anim_zoomIn"><a class="applink" data-path="apps/files/"><img
+                                src="assets/images/Document_alt.png" /> Document</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/Instagram.png" /> Instagram</a>
+                    </li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/facebook.png" />Facebook</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/Spotify Flat.png" />Spotify</a>
+                    </li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/youtube flat.png" />Youtube</a>
+                    </li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/Twitter.png" />Twitter</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/Picture_alt.png" />Gallery</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/Settings-512.png" />Settings</a>
+                    </li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/drakstats_192x192.png" />Drak
+                            Stats</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/bluefolder.svg" />Folder</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/google-chrome_192x192.png" />
+                            Chrome</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/skype.png" /> Skype</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/Gmail.png" />Mail</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/ps-1.png" />Photoshop</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/word.png" />Word</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/excel.png" />Excel</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/powerpoint.png" />PowerPoint</a>
+                    </li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/onedrive.png" />Onedrive</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/Document_alt.png" /> Document</a>
+                    </li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/Instagram.png" /> Instagram</a>
+                    </li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/facebook.png" />Facebook</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/Spotify Flat.png" />Spotify</a>
+                    </li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/youtube flat.png" />Youtube</a>
+                    </li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/Twitter.png" />Twitter</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/Picture_alt.png" />Gallery</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/Settings-512.png" />Settings</a>
+                    </li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/drakstats_192x192.png" />Drak
+                            Stats</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/bluefolder.svg" />Folder</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/google-chrome_192x192.png" />
+                            Chrome</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/skype.png" /> Skype</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/Gmail.png" />Mail</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/ps-1.png" />Photoshop</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/word.png" />Word</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/excel.png" />Excel</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/powerpoint.png" />PowerPoint</a>
+                    </li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/onedrive.png" />Onedrive</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/Document_alt.png" /> Document</a>
+                    </li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/Instagram.png" /> Instagram</a>
+                    </li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/facebook.png" />Facebook</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/Spotify Flat.png" />Spotify</a>
+                    </li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/youtube flat.png" />Youtube</a>
+                    </li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/Twitter.png" />Twitter</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/Picture_alt.png" />Gallery</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/Settings-512.png" />Settings</a>
+                    </li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/drakstats_192x192.png" />Drak
+                            Stats</a></li>
+                    <li class="icon anim_zoomIn"><a href="#"><img src="assets/images/bluefolder.svg" />Folder</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="sidebar" class="anim_slideleft">
+            <ul class="iconparent">
+                <li class="icon">
+                    <a href="#">
+                        <img src="assets/images/extra.png" />
+                        <div class="message">
+                            <h3>Message from Osanim OS</h3>
+                            <p>This is a message from Osanim OS for you to know we care a lot, we are always availabe
+                                for
+                                any issues you might face</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="#">
+                        <img src="assets/images/google-chrome_192x192.png" />
+                        <div class="message">
+                            <h3>Chrome OS</h3>
+                            <p>This is a message from Chrome OS</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="#">
+                        <img src="assets/images/skype.png" />
+                        <div class="message">
+                            <h3>Chrome OS</h3>
+                            <p>This is a message from Skype</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="#">
+                        <img src="assets/images/Gmail.png" />
+                        <div class="message">
+                            <h3>Mail</h3>
+                            <p>This is a message from Mail</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="taskbar">
+            <div id="left">
+                <ul class="iconparent">
+                    <li class="icon anim_zoomIn"><a id="startbutton" href="#"><img
+                                src="assets/images/startmenu.png" /></a></li>
+                    <li class="icon anim_zoomIn"><a class="applink" data-path="apps/browser/"><img
+                                src="assets/images/google-chrome_192x192.png" /></a></li>
+                    <li class="icon anim_zoomIn"><a class="applink" data-path="apps/files/"><img
+                                src="assets/images/skype.png" /></a></li>
+                    <li class="icon anim_zoomIn"><a class="applink" data-path="apps/files/"><img
+                                src="assets/images/Gmail.png" /></a></li>
+                    <li class="icon anim_zoomIn"><a class="applink" data-path="apps/files/"><img
+                                src="assets/images/ps-1.png" /></a></li>
+                    <li class="icon anim_zoomIn"><a class="applink" data-path="apps/microsoft/word/"><img
+                                src="assets/images/word.png" /></a></li>
+                    <li class="icon anim_zoomIn"><a class="applink" data-path="apps/microsoft/excel/"><img
+                                src="assets/images/excel.png" /></a></li>
+                    <li class="icon anim_zoomIn"><a class="applink" data-path="apps/microsoft/powerpoint/"><img
+                                src="assets/images/powerpoint.png" /></a></li>
+                    <li class="icon anim_zoomIn"><a class="applink" data-path="apps/files/"><img
+                                src="assets/images/onedrive.png" /></a></li>
+                </ul>
+
+            </div>
+            <div id="right">
+                <ul class="iconparent">
+                    <li class="icon"><a href="#"><i class="fa fa-wifi fa-1x"></i></a></li>
+                    <li class="icon"><a href="#"><i class="fa fa-battery-full fa-1x"></i></a></li>
+                    <li class="icon">
+                        <a href="#">
+                            <small style="display: block; font-size: 11px;">03:35AM</small>
+                            <small style="display: block; font-size: 11px;">23/06/2019</small>
+                        </a>
+                    </li>
+                    <li class="icon"><a id="sidebarbutton" href="#"><img src="assets/images/extra.png" /></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
